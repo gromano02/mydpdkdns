@@ -26,7 +26,7 @@ link.addInterface(node2.addInterface("eth1"))
 
 # Install and execute a script on both nodes that is contained in the repository.
 #node1.addService(pg.Execute(shell="sh", command="/local/repository/setup.sh"))
-#node2.addService(pg.Execute(shell="sh", command="/local/repository/setup2.sh"))
+node2.addService(pg.Execute(shell="sh", command="/local/repository/setup2.sh"))
 
 # Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
